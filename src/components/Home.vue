@@ -1,5 +1,8 @@
 <template>
   <a-layout>
+    <div>cccccccc</div>
+    <a-button @click="test">测试</a-button>
+    <router-view/>
   </a-layout>
 </template>
 
@@ -8,6 +11,11 @@
     name: 'Home',
     data(){
       return{
+      }
+    },
+    methods:{
+      test(){
+        this.$router.push({path:'/homepage'})
       }
     }
   }
