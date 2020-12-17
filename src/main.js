@@ -11,11 +11,12 @@ import 'ant-design-vue/dist/antd.css'
 /*引入element-ui*/
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+import './router/config'
+
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 Vue.use(Antd)
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

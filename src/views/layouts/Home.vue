@@ -54,7 +54,7 @@
     },
     data() {
       return {
-        current: ['mail'],
+        current: ['1'],
         collapsed: false,
         list:[
           {
@@ -93,6 +93,9 @@
           }
         ]
       }
+    },
+    mounted () {
+      this.$router.replace({path:'/homepage'})
     },
     methods:{
       menuClick(item){
