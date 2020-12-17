@@ -58,21 +58,37 @@
         collapsed: false,
         list:[
           {
-            key: 'test1',
-            title: 'test1',
+            key: '1',
+            title: '主页',
             children: []
           },
           {
             key: '2',
-            title: '啊啊啊 2',
+            title: '画廊',
             children:[{
               key: '2.1',
-              title: '啊啊啊 3',
+              title: '素描',
+              children: []
+            },{
+              key: '2.2',
+              title: '速写',
+              children: []
+            },{
+              key: '2.3',
+              title: '插画',
               children: [{
-                key: 'test2',
-                title: 'test2',
+                key: '2.3.1',
+                title: '手绘',
                 children:[]
-              }],
+              },{
+                key: '2.3.2',
+                title: '板绘',
+                children:[]
+              }]
+            },{
+              key: '2.4',
+              title: '动漫卡通',
+              children: []
             }]
           }
         ]
@@ -80,9 +96,9 @@
     },
     methods:{
       menuClick(item){
-        if(item.key==='test1'){
+        if(item.key==='1'){
           this.$router.push({path:'/test1'})
-        }else{
+        }else if(item.key==='2'){
           this.$router.push({path:'/test2'})
         }
       }
@@ -92,7 +108,7 @@
 
 <style scoped>
   #components-layout-demo-basic {
-    text-align: center;
+    text-align: left;
   }
   #components-layout-demo-basic .ant-layout-header,
   #components-layout-demo-basic .ant-layout-footer {

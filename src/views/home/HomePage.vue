@@ -1,8 +1,6 @@
 <template>
   <div>
-    <p>aaaaaaaaaaaaaaa</p>
-    <a-button @click="test2">测试2</a-button>
-    <router-view/>
+    <span style="font-size: 20px">my homepage!</span>
   </div>
 </template>
 

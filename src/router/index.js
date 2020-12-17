@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/layouts/Home'
+import Home from '@/views/layouts/Home'
 import HomePage from '@/views/home/HomePage'
 import test1 from '@/views/test/test1'
 import test2 from '@/views/test/test2'
