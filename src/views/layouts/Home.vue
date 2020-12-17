@@ -97,8 +97,8 @@
     methods:{
       menuClick(item){
         if(item.key==='1'){
-          this.$router.push({path:'/test1'})
-        }else if(item.key==='2'){
+          this.$router.push({path:'/homepage'})
+        }else if(item.key==='2.1'){
           this.$router.push({path:'/test2'})
         }
       }
